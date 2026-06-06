@@ -160,31 +160,32 @@
    var typeEl = document.querySelector('header h3 span');
 
    if (typeEl) {
-      var cursor = document.createElement('span');
-      cursor.className = 'typewriter-cursor';
-      typeEl.parentNode.insertBefore(cursor, typeEl.nextSibling);
-
       function typeLoop() {
          var current = roles[roleIdx];
+         var delay;
+
          if (isDeleting) {
             typeEl.textContent = current.substring(0, charIdx - 1);
             charIdx--;
+            delay = 38 + Math.random() * 22; /* 38-60ms — fast but natural delete */
          } else {
             typeEl.textContent = current.substring(0, charIdx + 1);
             charIdx++;
+            delay = 90 + Math.random() * 50; /* 90-140ms — human-like typing speed */
          }
-         var delay = isDeleting ? 55 : 95;
+
          if (!isDeleting && charIdx === current.length) {
-            delay = 2000;
+            delay = 2400; /* pause at full word */
             isDeleting = true;
          } else if (isDeleting && charIdx === 0) {
             isDeleting = false;
             roleIdx = (roleIdx + 1) % roles.length;
-            delay = 350;
+            delay = 400; /* brief pause before next word */
          }
+
          setTimeout(typeLoop, delay);
       }
-      setTimeout(typeLoop, 1200);
+      setTimeout(typeLoop, 1000);
    }
 
 
