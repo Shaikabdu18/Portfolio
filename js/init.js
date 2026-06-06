@@ -134,6 +134,24 @@
    });
 
 /*----------------------------------------------------*/
+/*	Portfolio Scroll Animations
+------------------------------------------------------*/
+
+   var portfolioObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+         if (entry.isIntersecting) {
+            $(entry.target).addClass('animate');
+            portfolioObserver.unobserve(entry.target);
+         }
+      });
+   }, { threshold: 0.1 });
+
+   $('#portfolio-wrapper .portfolio-item').each(function() {
+      portfolioObserver.observe(this);
+   });
+
+
+/*----------------------------------------------------*/
 /*	contact form
 ------------------------------------------------------*/
 
