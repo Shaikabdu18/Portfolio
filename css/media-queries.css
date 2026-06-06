@@ -53,6 +53,10 @@
       width: 114px;
       height: 114px;
       margin-left: 12px;
+      object-fit: cover;
+      object-position: 50% 8%;
+      animation: profileFloat 4s ease-in-out infinite,
+                 profileRing  3s ease-in-out infinite;
    }
    #about .contact-details { width: 50%; }
    #about .download { width: 50%; }
