@@ -152,6 +152,83 @@
 
 
 /*----------------------------------------------------*/
+/*  Typewriter cycling text
+------------------------------------------------------*/
+
+   var roles = ['Full Stack Developer', 'Backend Engineer', 'React Developer', 'API Architect', 'NestJS Expert'];
+   var roleIdx = 0, charIdx = 0, isDeleting = false;
+   var typeEl = document.querySelector('header h3 span');
+
+   if (typeEl) {
+      var cursor = document.createElement('span');
+      cursor.className = 'typewriter-cursor';
+      typeEl.parentNode.insertBefore(cursor, typeEl.nextSibling);
+
+      function typeLoop() {
+         var current = roles[roleIdx];
+         if (isDeleting) {
+            typeEl.textContent = current.substring(0, charIdx - 1);
+            charIdx--;
+         } else {
+            typeEl.textContent = current.substring(0, charIdx + 1);
+            charIdx++;
+         }
+         var delay = isDeleting ? 55 : 95;
+         if (!isDeleting && charIdx === current.length) {
+            delay = 2000;
+            isDeleting = true;
+         } else if (isDeleting && charIdx === 0) {
+            isDeleting = false;
+            roleIdx = (roleIdx + 1) % roles.length;
+            delay = 350;
+         }
+         setTimeout(typeLoop, delay);
+      }
+      setTimeout(typeLoop, 1200);
+   }
+
+
+/*----------------------------------------------------*/
+/*  Resume items slide in on scroll
+------------------------------------------------------*/
+
+   var resumeItems = $('.row.item');
+   var resumeObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+         if (entry.isIntersecting) {
+            var idx = resumeItems.index(entry.target);
+            setTimeout(function() {
+               $(entry.target).addClass('slide-in');
+            }, (idx % 4) * 100);
+            resumeObserver.unobserve(entry.target);
+         }
+      });
+   }, { threshold: 0.12 });
+
+   resumeItems.each(function() {
+      resumeObserver.observe(this);
+   });
+
+
+/*----------------------------------------------------*/
+/*  Skill bars animate on scroll
+------------------------------------------------------*/
+
+   var skillsObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+         if (entry.isIntersecting) {
+            $(entry.target).addClass('in-view');
+            skillsObserver.unobserve(entry.target);
+         }
+      });
+   }, { threshold: 0.3 });
+
+   $('.bars').each(function() {
+      skillsObserver.observe(this);
+   });
+
+
+/*----------------------------------------------------*/
 /*	contact form
 ------------------------------------------------------*/
 

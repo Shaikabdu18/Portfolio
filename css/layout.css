@@ -1018,6 +1018,134 @@ call-to-action .button {
 #portfolio-wrapper .portfolio-item:nth-child(7).animate { animation-delay: 0.65s; }
 #portfolio-wrapper .portfolio-item:nth-child(8).animate { animation-delay: 0.75s; }
 
+/* -----------------------------------------------
+   Bounce scroll arrow
+----------------------------------------------- */
+@keyframes bounceArrow {
+   0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+   40%  { transform: translateY(-12px); }
+   60%  { transform: translateY(-6px); }
+}
+header .scrolldown a {
+   animation: bounceArrow 2s infinite;
+}
+
+/* -----------------------------------------------
+   Portfolio shine sweep on hover
+----------------------------------------------- */
+.portfolio-item .item-wrap::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: -80%;
+   z-index: 10;
+   width: 50%;
+   height: 100%;
+   background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.28) 100%);
+   transform: skewX(-20deg);
+   pointer-events: none;
+}
+.portfolio-item:hover .item-wrap::before {
+   animation: shinePortfolio 0.65s ease forwards;
+}
+@keyframes shinePortfolio {
+   100% { left: 130%; }
+}
+
+/* -----------------------------------------------
+   Social icons pop on hover
+----------------------------------------------- */
+@keyframes socialPop {
+   0%   { transform: scale(1) rotate(0deg); }
+   40%  { transform: scale(1.4) rotate(-10deg); }
+   70%  { transform: scale(1.2) rotate(6deg); }
+   100% { transform: scale(1) rotate(0deg); }
+}
+header .social li a,
+footer .social-links li a {
+   display: inline-block;
+}
+header .social li a:hover,
+footer .social-links li a:hover {
+   animation: socialPop 0.4s ease forwards;
+}
+
+/* -----------------------------------------------
+   Resume items slide in from left on scroll
+----------------------------------------------- */
+.row.item {
+   opacity: 0;
+   transform: translateX(-40px);
+   transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.row.item.slide-in {
+   opacity: 1;
+   transform: translateX(0);
+}
+
+/* -----------------------------------------------
+   Skill bars animate on scroll
+----------------------------------------------- */
+.html5, .css, .jquery, .photoshop, .illustrator, .wordpress {
+   width: 0 !important;
+}
+.bars.in-view .html5 { animation: html5 1.8s ease forwards; }
+.bars.in-view .css   { animation: css   1.8s ease forwards; }
+.bars.in-view .jquery{ animation: jquery 1.8s ease forwards; }
+
+.bars.in-view li:nth-child(1) .bar-expand { animation-delay: 0s;    }
+.bars.in-view li:nth-child(2) .bar-expand { animation-delay: 0.15s; }
+.bars.in-view li:nth-child(3) .bar-expand { animation-delay: 0.3s;  }
+.bars.in-view li:nth-child(4) .bar-expand { animation-delay: 0.45s; }
+.bars.in-view li:nth-child(5) .bar-expand { animation-delay: 0.6s;  }
+.bars.in-view li:nth-child(6) .bar-expand { animation-delay: 0.75s; }
+.bars.in-view li:nth-child(7) .bar-expand { animation-delay: 0.9s;  }
+.bars.in-view li:nth-child(8) .bar-expand { animation-delay: 1.05s; }
+.bars.in-view li:nth-child(9) .bar-expand { animation-delay: 1.2s;  }
+
+@keyframes html5  { 0% { width: 0; } 100% { width: 80%; } }
+@keyframes css    { 0% { width: 0; } 100% { width: 90%; } }
+@keyframes jquery { 0% { width: 0; } 100% { width: 50%; } }
+
+/* -----------------------------------------------
+   Typewriter cursor blink
+----------------------------------------------- */
+.typewriter-cursor {
+   display: inline-block;
+   width: 3px;
+   height: 0.85em;
+   background: #11ABB0;
+   margin-left: 4px;
+   vertical-align: middle;
+   border-radius: 1px;
+   animation: blinkCursor 0.75s step-end infinite;
+}
+@keyframes blinkCursor {
+   0%, 100% { opacity: 1; }
+   50%       { opacity: 0; }
+}
+
+/* -----------------------------------------------
+   Nav link animated underline
+----------------------------------------------- */
+#nav-wrap ul li a {
+   position: relative;
+}
+#nav-wrap ul li a::after {
+   content: '';
+   position: absolute;
+   bottom: -3px;
+   left: 0;
+   width: 0;
+   height: 2px;
+   background: #11ABB0;
+   transition: width 0.3s ease;
+}
+#nav-wrap ul li a:hover::after,
+#nav-wrap ul li.current a::after {
+   width: 100%;
+}
+
 /* Clearfix for .slides */
 .slides:before,
 .slides:after {
