@@ -230,6 +230,21 @@
 
 
 /*----------------------------------------------------*/
+/*  Scroll progress bar
+------------------------------------------------------*/
+
+   var progressEl = document.getElementById('scroll-progress');
+   if (progressEl) {
+      var updateProgress = function() {
+         var max = document.documentElement.scrollHeight - window.innerHeight;
+         progressEl.style.width = (max > 0 ? (window.pageYOffset / max) * 100 : 0) + '%';
+      };
+      $(window).on('scroll resize', updateProgress);
+      updateProgress();
+   }
+
+
+/*----------------------------------------------------*/
 /*	contact form
 ------------------------------------------------------*/
 

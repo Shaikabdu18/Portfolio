@@ -22,10 +22,14 @@
 
    <!-- CSS
     ================================================== -->
-   <link rel="stylesheet" href="css/default.css?v=3">
-   <link rel="stylesheet" href="css/layout.css?v=3">
-   <link rel="stylesheet" href="css/media-queries.css?v=3">
-   <link rel="stylesheet" href="css/magnific-popup.css?v=3">
+   <link rel="stylesheet" href="css/default.css?v=4">
+   <link rel="stylesheet" href="css/layout.css?v=4">
+   <link rel="stylesheet" href="css/media-queries.css?v=4">
+   <link rel="stylesheet" href="css/magnific-popup.css?v=4">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+   <link rel="stylesheet" href="css/modern.css?v=4">
 
    <!-- Script
    ================================================== -->
@@ -49,6 +53,8 @@
 
 <body>
 
+   <div id="scroll-progress"></div>
+
    <!-- Header
    ================================================== -->
    <header id="home">
@@ -63,7 +69,7 @@
             <li><a class="smoothscroll" href="#about">About</a></li>
             <li><a class="smoothscroll" href="#resume">Resume</a></li>
             <li><a class="smoothscroll" href="#portfolio">Works</a></li>
-            <!--<li><a class="smoothscroll" href="#testimonials">Testimonials</a></li> -->
+            <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
             <li><a class="smoothscroll" href="#contact">Contact</a></li>
          </ul> <!-- end #nav -->
 
@@ -71,13 +77,18 @@
 
       <div class="row banner">
          <div class="banner-text">
-            <h1 class="responsive-headline">I'm Shaik Abdulla</h1>
+            <div class="hero-badge"><span class="dot"></span>Open to Software Engineer roles &middot; Willing to relocate to Dubai</div>
+            <h1 class="responsive-headline">I'm <span class="grad">Shaik Abdulla</span></h1>
             <h3>I'm a <span>Software Engineer</span><br>
                with 2+ years of experience designing, building and releasing distributed backend systems
                across microservices, event-driven processing and RESTful services, in C#/.NET, Go and Node.js.
                Let's <a class="smoothscroll" href="#about">start scrolling</a>
                and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
             <hr />
+            <div class="hero-cta">
+               <a class="btn-primary smoothscroll" href="#portfolio"><i class="fa fa-code"></i>View My Work</a>
+               <a class="btn-ghost" href="./assets/Shaik-Abdulla-Resume.pdf" download><i class="fa fa-download"></i>Download Resume</a>
+            </div>
             <ul class="social">
                <li> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shaikabdu49@gmail.com" target="_blank">
                      <i class="fa fa-envelope"></i></a></li>
@@ -370,6 +381,7 @@
          <div class="twelve columns collapsed">
 
             <h1>Check Out Some of My Works.</h1>
+            <p class="section-sub">Personal and learning projects across backend APIs, real-time apps and full-stack builds. Click a card for details and source code.</p>
 
             <!-- portfolio-wrapper -->
             <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
@@ -689,56 +701,70 @@
    ================================================== -->
    <section id="testimonials">
 
-      <div class="text-container">
+      <div class="row">
+         <div class="twelve columns">
+            <h1>What Clients Say</h1>
+            <p class="section-sub">Feedback from the teams and clients I've built software for.</p>
+         </div>
+      </div>
 
-         <div class="row">
+      <div class="row">
+         <div class="testimonial-grid">
 
-            <div class="two columns header-col">
+            <figure class="t-card">
+               <span class="t-project">ASB &middot; Enterprise Microservices Platform</span>
+               <blockquote>"Shaik went the extra mile for every release, putting in extended hours when deadlines were tight and staying available for support whenever we needed him. He owned the Admin Module and Pillar 5 and delivered 100+ APIs across our microservices."</blockquote>
+               <figcaption>
+                  <span class="t-avatar">AS</span>
+                  <span class="t-who"><strong>ASB Team</strong></span>
+               </figcaption>
+            </figure>
 
-               <h1><span>Client Testimonials</span></h1>
+            <figure class="t-card">
+               <span class="t-project">Rattha &middot; CMS &amp; Public Website</span>
+               <blockquote>"As the only backend engineer, Shaik built our entire CMS backend, including 75+ APIs, secure roles and third-party integrations, and we launched with zero critical issues. He understood what our content team needed and turned it into working features quickly."</blockquote>
+               <figcaption>
+                  <span class="t-avatar">RA</span>
+                  <span class="t-who"><strong>Rattha Team</strong></span>
+               </figcaption>
+            </figure>
 
+            <figure class="t-card">
+               <span class="t-project">Daikin &middot; Multi-Module Business Application</span>
+               <blockquote>"Shaik worked really well with our team through UAT. He picked up bugs quickly, fixed them properly and helped us deliver a smooth release. Dependable, responsive and easy to work with."</blockquote>
+               <figcaption>
+                  <span class="t-avatar">DA</span>
+                  <span class="t-who"><strong>Daikin Team</strong></span>
+               </figcaption>
+            </figure>
+
+            <figure class="t-card">
+               <span class="t-project">Bridgeport &middot; Crypto Product</span>
+               <blockquote>"Shaik built the middleware proxy for our crypto product. Even though it was his first project, he picked up the domain quickly, asked the right questions and delivered reliable, well-structured code."</blockquote>
+               <figcaption>
+                  <span class="t-avatar">BP</span>
+                  <span class="t-who"><strong>Bridgeport Team</strong></span>
+               </figcaption>
+            </figure>
+
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="values-band">
+            <h4>Words I Live By</h4>
+            <div class="values-grid">
+               <blockquote class="value-quote">
+                  <p>"The best of people are those who are most beneficial to others."</p>
+                  <cite>Prophet Muhammad (PBUH)</cite>
+               </blockquote>
+               <blockquote class="value-quote">
+                  <p>"Seek knowledge from the cradle to the grave."</p>
+                  <cite>Prophet Muhammad (PBUH)</cite>
+               </blockquote>
             </div>
-
-            <div class="ten columns flex-container">
-
-               <div class="flexslider">
-
-                  <ul class="slides">
-
-                     <!-- Client / manager testimonials: paste real quotes here, then uncomment.
-                     <li>
-                        <blockquote>
-                           <p>"[Exact quote from your client, manager or team lead]"</p>
-                           <cite>[Name], [Role] - [Company or Project]</cite>
-                        </blockquote>
-                     </li>
-                     -->
-
-                     <li>
-                        <blockquote>
-                           <p>"The best of people are those who are most beneficial to others."
-                           </p>
-                           <cite>Prophet Muhammad (PBUH)</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
-
-                     <li>
-                        <blockquote>
-                           <p>"Seek knowledge from the cradle to the grave."
-                           </p>
-                           <cite>Prophet Muhammad (PBUH)</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
-
-                  </ul>
-
-               </div> <!-- div.flexslider ends -->
-
-            </div> <!-- div.flex-container ends -->
-
-         </div> <!-- row ends -->
-
-      </div> <!-- text-container ends -->
+         </div>
+      </div>
 
    </section> <!-- Testimonials Section End-->
 
@@ -894,11 +920,11 @@
    ================================================== -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
    <script src="js/jquery-migrate-1.2.1.min.js"></script> <!-- If still needed -->
-   <script src="js/jquery.flexslider.js?v=3"></script>
-   <script src="js/waypoints.js?v=3"></script>
-   <script src="js/jquery.fittext.js?v=3"></script>
-   <script src="js/magnific-popup.js?v=3"></script>
-   <script src="js/init.js?v=3"></script>
+   <script src="js/jquery.flexslider.js?v=4"></script>
+   <script src="js/waypoints.js?v=4"></script>
+   <script src="js/jquery.fittext.js?v=4"></script>
+   <script src="js/magnific-popup.js?v=4"></script>
+   <script src="js/init.js?v=4"></script>
    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
    <script>
