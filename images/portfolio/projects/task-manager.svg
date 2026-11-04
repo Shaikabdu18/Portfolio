@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="500" viewBox="0 0 600 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#123c3e"/>
+      <stop offset="1" stop-color="#2fbfa0"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="500" fill="url(#bg)"/>
+  <circle cx="540" cy="40" r="140" fill="#ffffff" opacity="0.05"/>
+  <circle cx="40" cy="470" r="120" fill="#ffffff" opacity="0.05"/>
+  
+    <g transform="translate(195,85)">
+      <rect x="0" y="0" width="210" height="200" rx="14" fill="rgba(255,255,255,0.10)"/>
+      
+        <rect x="24" y="30" width="30" height="30" rx="7" fill="none" stroke="#ffffff" stroke-width="4"/>
+        <path d="M30,45 l8,8 l14,-16" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="70" y="39" width="115" height="12" rx="6" fill="#ffffff" opacity="0.55"/>
+      
+        <rect x="24" y="85" width="30" height="30" rx="7" fill="none" stroke="#ffffff" stroke-width="4"/>
+        <path d="M30,100 l8,8 l14,-16" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="70" y="94" width="90" height="12" rx="6" fill="#ffffff" opacity="0.55"/>
+      
+        <rect x="24" y="140" width="30" height="30" rx="7" fill="none" stroke="#ffffff" stroke-width="4"/>
+        
+        <rect x="70" y="149" width="115" height="12" rx="6" fill="#ffffff" opacity="0.95"/>
+      
+    </g>
+  <text x="300" y="380" text-anchor="middle" font-family="'Open Sans','Segoe UI',Arial,sans-serif" font-size="40" font-weight="700" fill="#ffffff">Task Manager</text>
+  <text x="300" y="422" text-anchor="middle" font-family="'Open Sans','Segoe UI',Arial,sans-serif" font-size="20" letter-spacing="3" fill="#ffffff" opacity="0.75">WEB DEVELOPMENT</text>
+</svg>

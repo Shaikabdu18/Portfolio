@@ -155,7 +155,7 @@
 /*  Typewriter cycling text
 ------------------------------------------------------*/
 
-   var roles = ['Full Stack Developer', 'Backend Engineer', 'React Developer', 'API Architect', 'NestJS Expert'];
+   var roles = ['Software Engineer', 'Backend Engineer', 'Distributed Systems Builder', 'C# / .NET & Go Developer', 'Product-Minded Engineer'];
    var roleIdx = 0, charIdx = 0, isDeleting = false;
    var typeEl = document.querySelector('header h3 span');
 

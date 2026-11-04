@@ -1499,3 +1499,101 @@ footer .social-links li:first-child {
 #go-top a:hover {
    background-color: #0F9095;
 }
+
+/* ------------------------------------------------------------------ */
+/* Impact stats, project highlights, tech tags, skill groups
+/* ------------------------------------------------------------------ */
+
+#about .impact-stats {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 14px;
+   margin: 6px 0 30px;
+   list-style: none;
+}
+
+#about .impact-stats li {
+   flex: 1 1 140px;
+   margin: 0;
+   padding: 16px 12px;
+   text-align: center;
+   border: 1px solid #3d3d3d;
+   border-top: 3px solid #11ABB0;
+   border-radius: 4px;
+   background: #313131;
+   transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+#about .impact-stats li:hover {
+   transform: translateY(-4px);
+   border-color: #11ABB0;
+}
+
+#about .impact-stats strong {
+   display: block;
+   font: 30px/36px 'opensans-bold', sans-serif;
+   color: #fff;
+}
+
+#about .impact-stats span {
+   display: block;
+   margin-top: 4px;
+   font: 13px/18px 'opensans-regular', sans-serif;
+   color: #9a9a9a;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+
+#resume ul.highlights {
+   margin: 0 0 16px 22px;
+}
+
+#resume ul.highlights li {
+   line-height: 26px;
+   margin-bottom: 8px;
+}
+
+#resume ul.highlights strong {
+   color: #313131;
+}
+
+.tech-tags span {
+   display: inline-block;
+   margin: 0 8px 8px 0;
+   padding: 3px 12px;
+   font: 13px/22px 'opensans-semibold', sans-serif;
+   color: #0F9095;
+   background: #eaf7f7;
+   border: 1px solid #c4ebec;
+   border-radius: 14px;
+}
+
+#resume .skill-groups {
+   margin: 24px 0 12px;
+}
+
+#resume .skill-group h4 {
+   margin: 0 0 6px;
+   font: 14px/20px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+   color: #313131;
+}
+
+#resume .skill-group .tech-tags {
+   margin-bottom: 14px;
+}
+
+@media only screen and (max-width: 767px) {
+   #about .impact-stats li { flex: 1 1 45%; }
+   #about .impact-stats strong { font-size: 24px; }
+   #resume ul.highlights { text-align: left; }
+}
+
+/* Uniform portfolio tiles */
+.portfolio-item .item-wrap img {
+   width: 100%;
+   aspect-ratio: 6 / 5;
+   object-fit: cover;
+   display: block;
+}
