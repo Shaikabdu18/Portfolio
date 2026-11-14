@@ -245,6 +245,33 @@
 
 
 /*----------------------------------------------------*/
+/*  Cursor spotlight on cards
+------------------------------------------------------*/
+
+   $(document).on('mousemove', '.spot, .t-card', function(e) {
+      var r = this.getBoundingClientRect();
+      this.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+      this.style.setProperty('--my', (e.clientY - r.top) + 'px');
+   });
+
+
+/*----------------------------------------------------*/
+/*  Reveal expertise cards on scroll
+------------------------------------------------------*/
+
+   var bentoObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+         if (entry.isIntersecting) {
+            $(entry.target).addClass('in');
+            bentoObserver.unobserve(entry.target);
+         }
+      });
+   }, { threshold: 0.15 });
+
+   $('.bento-card').each(function() { bentoObserver.observe(this); });
+
+
+/*----------------------------------------------------*/
 /*	contact form
 ------------------------------------------------------*/
 

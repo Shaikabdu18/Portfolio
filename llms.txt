@@ -1,0 +1,37 @@
+# Shaik Abdulla - Software Engineer
+
+> Software Engineer (backend focus) with 2+ years of experience building distributed backend systems, RESTful APIs and AI features. Based in Chennai, India. Open to Software Engineer roles.
+
+## Contact
+- Email: shaikabdu49@gmail.com
+- Phone: +91 9498876303
+- Portfolio: https://shaikabdu18.github.io/Portfolio/
+- GitHub: https://github.com/Shaikabdu18
+- LinkedIn: https://www.linkedin.com/in/shaik--abdulla/
+- Resume (PDF): https://shaikabdu18.github.io/Portfolio/assets/Shaik-Abdulla-Resume.pdf
+
+## Current role
+Software Developer at DoodleBlue Innovations, Chennai (Hybrid), June 2024 - Present. Designs, builds and releases backend services and APIs for 3+ enterprise client projects, owning API and database design, access control, releases and production support.
+
+## Key results
+- 300+ RESTful APIs built across enterprise projects
+- Reporting APIs made about 80% faster (8s to under 1.5s) through MySQL indexing and query tuning
+- 10,000+ records processed per asynchronous background run with BullMQ and Redis
+- 20+ releases shipped on schedule
+- Zero critical post-launch issues on a solo-built CMS backend
+
+## Projects
+- ASB - Enterprise Microservices Platform (NestJS, MySQL, TypeORM, BullMQ, Redis), Jan 2026 - Present: owns the Admin Module and Pillar 5; 100+ REST APIs across 4 microservices.
+- Rattha - CMS & Public Website (Express.js, MongoDB, Next.js), Jun 2025 - Jan 2026: sole backend engineer; 75+ REST APIs, JWT auth and RBAC with 4 roles, 3 third-party integrations.
+
+## Skills
+- Languages: TypeScript, JavaScript (ES6+), C#, .NET, Go
+- Backend: Node.js, NestJS, Express.js, RESTful APIs, Microservices, JWT, RBAC
+- Async and event-driven: Kafka, BullMQ, Redis
+- Databases: MySQL, PostgreSQL, SQL Server, MongoDB, TypeORM, Prisma
+- AI: OpenAI API, RAG, embeddings, semantic search, Qdrant, PGVector
+- Delivery: Git, GitHub Actions (CI/CD), Docker, Linux, Swagger / OpenAPI, Postman
+- Frontend: React.js, Next.js, Redux, Tailwind CSS
+
+## Education
+B.E. Electronics and Communication Engineering, Mohammed Sathak A.J. College of Engineering, Chennai (Anna University), 2020 - 2024, CGPA 8.2.
