@@ -24,6 +24,9 @@ Software Developer at DoodleBlue Innovations, Chennai (Hybrid), June 2024 - Pres
 - ASB - Enterprise Microservices Platform (NestJS, MySQL, TypeORM, BullMQ, Redis), Jan 2026 - Present: owns the Admin Module and Pillar 5; 100+ REST APIs across 4 microservices.
 - Rattha - CMS & Public Website (Express.js, MongoDB, Next.js), Jun 2025 - Jan 2026: sole backend engineer; 75+ REST APIs, JWT auth and RBAC with 4 roles, 3 third-party integrations.
 
+## Featured personal project
+- Service Desk API (https://github.com/Shaikabdu18/servicedesk-api): ticketing REST API in C#, ASP.NET Core 10, Entity Framework Core and SQL Server. JWT roles (Customer, Agent, Admin), ticket workflow and SLA rules in the domain model, Repository / Unit of Work / Strategy patterns, 34 unit and integration tests, Docker Compose and GitHub Actions CI.
+
 ## Skills
 - Languages: TypeScript, JavaScript (ES6+), C#, .NET, Go
 - Backend: Node.js, NestJS, Express.js, RESTful APIs, Microservices, JWT, RBAC

@@ -12,7 +12,8 @@
       resume: { label: 'Download resume', href: './assets/Shaik-Abdulla-Resume.pdf', download: true },
       linkedin: { label: 'LinkedIn', href: 'https://www.linkedin.com/in/shaik--abdulla/' },
       github: { label: 'GitHub', href: 'https://github.com/Shaikabdu18' },
-      works: { label: 'See my work', href: '#portfolio' }
+      works: { label: 'See my work', href: '#portfolio' },
+      servicedesk: { label: 'Service Desk API code', href: 'https://github.com/Shaikabdu18/servicedesk-api' }
    };
 
    var INTENTS = [
@@ -32,8 +33,8 @@
       },
       {
          keys: ['project', 'asb', 'rattha', 'built', 'portfolio', 'work on', 'case'],
-         answer: 'Two highlights: ASB, an enterprise microservices platform where I own the Admin Module and Pillar 5 (100+ APIs across 4 microservices), and Rattha, a CMS and public website where I was the sole backend engineer (75+ APIs, launched with zero critical issues).',
-         links: ['works']
+         answer: 'At work: ASB, an enterprise microservices platform where I own the Admin Module and Pillar 5 (100+ APIs across 4 microservices), and Rattha, a CMS where I was the sole backend engineer (75+ APIs, zero critical issues at launch). My featured personal project is the Service Desk API, built with ASP.NET Core, EF Core and SQL Server.',
+         links: ['works', 'servicedesk']
       },
       {
          keys: ['ai', 'llm', 'rag', 'openai', 'vector', 'embedding', 'gpt', 'semantic', 'machine learning', 'genai'],
@@ -41,7 +42,13 @@
       },
       {
          keys: ['.net', 'dotnet', 'c#', 'csharp', 'asp', 'golang', 'go'],
-         answer: 'Alongside Node.js I work in C#/.NET and Go. The same fundamentals carry across all three: OOP, dependency injection, layered architecture, clean REST APIs and solid SQL.'
+         answer: 'Alongside Node.js I work in C#/.NET and Go. My Service Desk API shows my .NET work: ASP.NET Core 10, EF Core and SQL Server, with JWT roles, Repository and Strategy patterns, and 34 passing tests.',
+         links: ['servicedesk']
+      },
+      {
+         keys: ['service desk', 'servicedesk', 'ticket', 'featured'],
+         answer: 'The Service Desk API is a ticketing REST API in ASP.NET Core 10 with EF Core and SQL Server. It has JWT roles, a ticket workflow, SLA due dates by priority, search and pagination, 34 unit and integration tests, Docker Compose and GitHub Actions CI.',
+         links: ['servicedesk']
       },
       {
          keys: ['microservice', 'kafka', 'event', 'queue', 'bullmq', 'redis', 'async', 'scale', 'distributed'],

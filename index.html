@@ -29,7 +29,7 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
-   <link rel="stylesheet" href="css/modern.css?v=20261114">
+   <link rel="stylesheet" href="css/modern.css?v=20261114b">
 
    <!-- Script
    ================================================== -->
@@ -480,6 +480,29 @@
 
             <h1>Check Out Some of My Works.</h1>
             <p class="section-sub">Personal and learning projects across backend APIs, real-time apps and full-stack builds. Click a card for details and source code.</p>
+
+            <!-- Featured project -->
+            <article class="featured-project spot">
+               <div class="fp-media">
+                  <img src="images/portfolio/projects/servicedesk-api.svg" alt="Service Desk API cover" width="600" height="500" loading="lazy">
+               </div>
+               <div class="fp-body">
+                  <span class="fp-badge"><i class="fa fa-star"></i> Featured project</span>
+                  <h2>Service Desk API</h2>
+                  <p class="fp-lead">A ticketing REST API where customers raise support tickets, agents work them through a defined workflow, and every ticket gets an SLA due date based on its priority.</p>
+                  <ul class="fp-points">
+                     <li>JWT authentication with Customer, Agent and Admin roles; customers only ever see their own tickets</li>
+                     <li>Ticket workflow and SLA rules enforced in the domain model, using Repository, Unit of Work and Strategy patterns</li>
+                     <li>Search, filters, pagination, overdue tracking and a stats endpoint in one grouped SQL query</li>
+                     <li>34 passing unit and integration tests, Docker Compose with SQL Server, and GitHub Actions CI</li>
+                  </ul>
+                  <p class="tech-tags"><span>C#</span><span>ASP.NET Core 10</span><span>EF Core</span><span>SQL Server</span><span>JWT</span><span>xUnit</span><span>Docker</span><span>Swagger</span></p>
+                  <div class="fp-actions">
+                     <a class="fp-btn primary" href="https://github.com/Shaikabdu18/servicedesk-api" target="_blank" rel="noopener"><i class="fa fa-github"></i> View code</a>
+                     <a class="fp-btn" href="https://github.com/Shaikabdu18/servicedesk-api#readme" target="_blank" rel="noopener"><i class="fa fa-book"></i> Read the docs</a>
+                  </div>
+               </div>
+            </article>
 
             <!-- portfolio-wrapper -->
             <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
@@ -1041,7 +1064,7 @@
    <script src="js/jquery.fittext.js?v=20261114"></script>
    <script src="js/magnific-popup.js?v=20261114"></script>
    <script src="js/init.js?v=20261114"></script>
-   <script src="js/assistant.js?v=20261114"></script>
+   <script src="js/assistant.js?v=20261114b"></script>
    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
    <script>

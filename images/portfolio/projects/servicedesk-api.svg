@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="500" viewBox="0 0 600 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b1f4b"/>
+      <stop offset="1" stop-color="#512BD4"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="500" fill="url(#bg)"/>
+  <circle cx="540" cy="40" r="140" fill="#ffffff" opacity="0.05"/>
+  <circle cx="40" cy="470" r="120" fill="#ffffff" opacity="0.05"/>
+  <g transform="translate(160,70)">
+    <path d="M0,20 a20,20 0 0 1 20,-20 h240 a20,20 0 0 1 20,20 v52 a26,26 0 0 0 0,52 v52 a20,20 0 0 1 -20,20 h-240 a20,20 0 0 1 -20,-20 v-52 a26,26 0 0 0 0,-52 z" fill="#ffffff"/>
+    <line x1="200" y1="14" x2="200" y2="202" stroke="#512BD4" stroke-width="3" stroke-dasharray="8 7" opacity="0.5"/>
+    <rect x="30" y="38" width="140" height="14" rx="7" fill="#1b1f4b" opacity="0.85"/>
+    <rect x="30" y="66" width="110" height="10" rx="5" fill="#1b1f4b" opacity="0.4"/>
+    <rect x="30" y="88" width="125" height="10" rx="5" fill="#1b1f4b" opacity="0.4"/>
+    <rect x="30" y="140" width="70" height="26" rx="13" fill="#11ABB0"/>
+    <rect x="110" y="140" width="60" height="26" rx="13" fill="#e0566b"/>
+    <circle cx="240" cy="108" r="22" fill="#512BD4"/>
+    <path d="M229,108 l8,8 l15,-17" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="300" y="380" text-anchor="middle" font-family="'Open Sans','Segoe UI',Arial,sans-serif" font-size="40" font-weight="700" fill="#ffffff">Service Desk API</text>
+  <text x="300" y="422" text-anchor="middle" font-family="'Open Sans','Segoe UI',Arial,sans-serif" font-size="20" letter-spacing="3" fill="#ffffff" opacity="0.75">ASP.NET CORE · SQL SERVER</text>
+</svg>
