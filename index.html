@@ -1068,7 +1068,10 @@
    <script src="js/jquery.fittext.js?v=20261114"></script>
    <script src="js/magnific-popup.js?v=20261114"></script>
    <script src="js/init.js?v=20261114"></script>
-   <script src="js/assistant.js?v=20261114b"></script>
+   <script src="js/analytics.js?v=20261117"></script>
+   <script src="js/assistant.js?v=20261117"></script>
+   <!-- Visitor analytics: GoatCounter (privacy-friendly, no cookies) -->
+   <script data-goatcounter="https://shaikabdulla.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
    <script>
@@ -1099,6 +1102,7 @@
                if (result.success) {
                   messageSuccess.style.display = "block";
                   form.reset(); // Reset the form
+                  if (window.trackEvent) window.trackEvent("contact/form-sent");
                } else {
                   messageWarning.textContent = "Failed to send message. Please try again.";
                   messageWarning.style.display = "block";

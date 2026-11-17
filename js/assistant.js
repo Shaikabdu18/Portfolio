@@ -187,7 +187,14 @@
       if (!text || busy) return;
       busy = true;
       addUser(text);
-      addBot(match(text), function () { busy = false; });
+      var reply = match(text);
+      // Only the topic is recorded, never the visitor's own words.
+      track('ask/' + (reply === FALLBACK ? 'unanswered' : reply.keys[0].replace(/[^a-z0-9]+/gi, '-').replace(/^-|-$/g, '')));
+      addBot(reply, function () { busy = false; });
+   }
+
+   function track(name) {
+      if (typeof window.trackEvent === 'function') window.trackEvent(name);
    }
 
    function renderChips() {
@@ -206,6 +213,7 @@
       fab.classList.add('is-open');
       if (!started) {
          started = true;
+         track('ask/open');
          renderChips();
          addBot({ answer: 'Hi, I\'m Shaik. Ask me anything about my skills, projects or experience, or tap a question below.' });
       }
