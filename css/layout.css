@@ -35,7 +35,7 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/header-background.jpg) no-repeat top center;
+   background: #161415;
    background-size: cover !important;
    -webkit-background-size: cover !important;
    text-align: center;
@@ -336,13 +336,13 @@ ul#nav li.current a {
    color: #313131;
 }
 
-#resume h1 {
+#resume h1, #resume h2.sec {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
 }
 
-#resume h1 span {
+#resume h1 span, #resume h2.sec span {
    border-bottom: 3px solid #11ABB0;
    padding-bottom: 6px;
 }
@@ -597,7 +597,7 @@ ul#nav li.current a {
    padding-bottom: 60px;
 }
 
-#portfolio h1 {
+#portfolio h1, #portfolio h2.sec {
    font: 15px/24px 'opensans-semibold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
@@ -856,7 +856,7 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #testimonials {
-   background: #1F1F1F url(../images/testimonials-bg.jpg) no-repeat center center;
+   background: #1F1F1F;
    background-size: cover !important;
    -webkit-background-size: cover !important;
    background-attachment: fixed;
@@ -872,14 +872,14 @@ call-to-action .button {
    padding-bottom: 66px;
 }
 
-#testimonials h1 {
+#testimonials h1, #testimonials h2.sec {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 3px;
    color: #fff;
 }
 
-#testimonials h1 span {
+#testimonials h1 span, #testimonials h2.sec span {
    display: none;
 }
 
@@ -887,7 +887,7 @@ call-to-action .button {
    padding-top: 9px;
 }
 
-#testimonials .header-col h1:before {
+#testimonials .header-col h1:before, #testimonials .header-col h2.sec:before {
    font-family: 'FontAwesome';
    content: "\f10d";
    padding-right: 10px;
@@ -1248,7 +1248,7 @@ header h3 span::after {
    color: #fff;
 }
 
-#contact h1 {
+#contact h1, #contact h2.sec {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 3px;
@@ -1256,11 +1256,11 @@ header h3 span::after {
    margin-bottom: 6px;
 }
 
-#contact h1 span {
+#contact h1 span, #contact h2.sec span {
    display: none;
 }
 
-#contact h1:before {
+#contact h1:before, #contact h2.sec:before {
    font-family: 'FontAwesome';
    content: "\f0e0";
    padding-right: 10px;

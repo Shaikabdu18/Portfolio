@@ -297,8 +297,8 @@ header .banner-text > *:nth-child(6) { animation-delay: .5s; }
 
 /* ---------- Resume ---------- */
 #resume { background: var(--surface); padding-top: 100px; }
-#resume h1 { font-size: 15px; font-weight: 800; letter-spacing: 2px; color: var(--text-dark); }
-#resume h1 span { border-bottom: 0; padding: 0 0 8px; background: linear-gradient(var(--teal), var(--teal)) left bottom / 36px 3px no-repeat; }
+#resume h1, #resume h2.sec { font-size: 15px; font-weight: 800; letter-spacing: 2px; color: var(--text-dark); }
+#resume h1 span, #resume h2.sec span { border-bottom: 0; padding: 0 0 8px; background: linear-gradient(var(--teal), var(--teal)) left bottom / 36px 3px no-repeat; }
 #resume h3 { font-size: 22px; line-height: 30px; font-weight: 800; letter-spacing: -.3px; color: var(--text-dark); margin-bottom: 4px; }
 #resume p, #resume li { color: var(--text-body); }
 #resume .info { font-size: 15px; font-style: normal; font-weight: 600; color: var(--teal-dark); margin: 4px 0 14px; }
@@ -384,7 +384,7 @@ header .banner-text > *:nth-child(6) { animation-delay: .5s; }
 
 /* ---------- Works ---------- */
 #portfolio { background: #eef2f7; padding-top: 100px; padding-bottom: 70px; }
-#portfolio h1 {
+#portfolio h1, #portfolio h2.sec {
    font-size: 30px;
    line-height: 38px;
    font-weight: 800;
@@ -436,7 +436,7 @@ header .banner-text > *:nth-child(6) { animation-delay: .5s; }
    padding: 30px 0 100px;
    min-height: 0;
 }
-#testimonials h1 {
+#testimonials h1, #testimonials h2.sec {
    font-size: 30px;
    line-height: 38px;
    font-weight: 800;
@@ -446,7 +446,7 @@ header .banner-text > *:nth-child(6) { animation-delay: .5s; }
    color: var(--text-dark);
    margin-bottom: 10px;
 }
-#testimonials h1:before { content: none !important; }
+#testimonials h1:before, #testimonials h2.sec:before { content: none !important; }
 #testimonials .section-sub { text-align: center; color: #64748b; margin: 0 auto 44px; max-width: 560px; }
 .testimonial-grid {
    display: grid;
@@ -568,8 +568,8 @@ header .banner-text > *:nth-child(6) { animation-delay: .5s; }
    border-top: 1px solid var(--line-dark);
    color: var(--text-muted);
 }
-#contact h1 { font-weight: 800; color: #fff; }
-#contact h1:before { color: var(--teal); }
+#contact h1, #contact h2.sec { font-weight: 800; color: #fff; }
+#contact h1:before, #contact h2.sec:before { color: var(--teal); }
 #contact p.lead { font-size: 18px; line-height: 32px; font-weight: 300; color: #cbd5e1; }
 #contact label { font-weight: 600; font-size: 14px; color: #cbd5e1; }
 #contact input,
@@ -639,7 +639,7 @@ footer .copyright li:before { color: var(--teal); }
    .testimonial-grid { grid-template-columns: 1fr; padding: 0 10px; }
    .t-card { padding: 26px 22px 22px; }
    #resume .row.item { padding: 20px 4px 10px; text-align: left; }
-   #portfolio h1 { font-size: 24px; line-height: 32px; }
+   #portfolio h1, #portfolio h2.sec { font-size: 24px; line-height: 32px; }
    #about .profile-wrap { width: 170px; height: 170px; margin: 10px auto 44px; }
    #about .profile-pic { display: block; width: 170px; height: 170px; margin: 0; }
    #nav-wrap > a { background-color: var(--teal-dark); border-radius: 8px; }
@@ -705,7 +705,7 @@ footer .copyright li:before { color: var(--teal); }
    text-transform: uppercase;
    color: var(--teal);
 }
-#expertise h1 {
+#expertise h1, #expertise h2.sec {
    max-width: 720px;
    margin: 0 auto 48px;
    text-align: center;
@@ -969,7 +969,7 @@ footer .copyright li:before { color: var(--teal); }
 }
 @media only screen and (max-width: 767px) {
    #expertise { padding: 70px 0 60px; }
-   #expertise h1 { font-size: 26px; line-height: 34px; margin-bottom: 32px; }
+   #expertise h1, #expertise h2.sec { font-size: 26px; line-height: 34px; margin-bottom: 32px; }
    .bento { grid-template-columns: 1fr; padding: 0 10px; }
    .bento-card.span-2, .bento-card.fill { grid-column: auto; }
    #ask-fab { right: 16px; bottom: 16px; height: 48px; padding: 0 18px 0 16px; }
@@ -1070,3 +1070,6 @@ footer .copyright li:before { color: var(--teal); }
 }
 .live-badge .dot { width: 7px; height: 7px; border-radius: 50%; background: #22c55e; animation: pulseDot 2s infinite; }
 .popup-modal .link-box a + a { margin-left: 24px; }
+
+/* ---------- SEO: section titles are h2 but keep the original h1 look ---------- */
+h2.sec { font-size: 38px; line-height: 42px; margin-bottom: 12px; letter-spacing: -1px; }
